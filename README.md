@@ -2,9 +2,7 @@
 ## Network & Community Forum
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Overview
@@ -113,12 +111,12 @@ Thanks goes to these wonderful people
 <table>
   <tr>
     <td align="center"><a href="https://github.com/Wazzag99"><img src="https://avatars2.githubusercontent.com/u/33938431?v=4" width="100px;" alt=""/><br /><sub><b>Warren G</b></sub></a><br /><a href="#userTesting-Wazzag99" title="User Testing">📓</a></td>
+    <td align="center"><a href="https://github.com/xcantera"><img src="https://avatars0.githubusercontent.com/u/34890623?v=4" width="100px;" alt=""/><br /><sub><b>Arturo Cantera Carrasco</b></sub></a><br /><a href="#userTesting-xcantera" title="User Testing">📓</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the
