@@ -1,4 +1,5 @@
-# Pristine
+# Freight Trust & Clearing Network
+## Network & Community Forum
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
@@ -6,20 +7,48 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Pristine is an open source repository in its original condition.
+## Overview
 
-There are a lack of repositories to start from to build community driven open
-source projects. Pristine is a starting point, it follows a Documentation Driven
-Development approach, and can be used as a resource to augment existing
-documentation.
+## Resources
 
-## How to use Pristine in your project
+### Identity & Node Management 
 
-There are 2 options for using pristine with your project.
+Here is our guidelines using AWS best-practices
 
-1. Fork this repo as the start of your own, OR
-2. [follow these instructions](https://thoughts.t37.net/merging-2-different-git-repositories-without-losing-your-history-de7a06bba804)
-   to use it on an existing repository.
+##### ARN Schema
+arn:partition:service:region:account-id:resource-id
+arn:partition:service:region:account-id:resource-type/resource-id
+arn:partition:service:region:account-id:resource-type:resource-id
+
+#### RegEx Formula
+(python)
+--->
+~~~
+^arn:(?P<Partition>[^:\n]*):(?P<Service>[^:\n]*):(?P<Region>[^:\n]*):(?P<AccountID>[^:\n]*):(?P<Ignore>(?P<ResourceType>[^:\/\n]*)[:\/])?(?P<Resource>.*)$
+~~~
+A pattern to parse Amazon Web Services ARNs into their varying components:
+
+Partition
+Service
+Region
+AccountID
+ResourceType (optional - empty string is missing)
+Resource
+<----
+
+##### RegEx Simple Formula
+
+` ^us-[a-z]*-[0-9]{1} `
+
+[Use this regexer to get an idea of how it works](https://regexr.com/4prv4)
+
+
+## Guidelines
+
+- Pool Operators
+   - Requirements
+- Node Operators
+   - Requirements
 
 ## Documentation Driven Development
 
