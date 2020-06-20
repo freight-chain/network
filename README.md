@@ -1,52 +1,52 @@
 # Freight Trust & Clearing Network
+
 ## Network & Community Forum
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Overview
 
 ## Resources
 
-### Identity & Node Management 
+### Identity & Node Management
 
 Here is our guidelines using AWS best-practices
 
 ##### ARN Schema
+
 arn:partition:service:region:account-id:resource-id
 arn:partition:service:region:account-id:resource-type/resource-id
 arn:partition:service:region:account-id:resource-type:resource-id
 
 #### RegEx Formula
-(python)
---->
-~~~
+
+(python) --->
+
+```
 ^arn:(?P<Partition>[^:\n]*):(?P<Service>[^:\n]*):(?P<Region>[^:\n]*):(?P<AccountID>[^:\n]*):(?P<Ignore>(?P<ResourceType>[^:\/\n]*)[:\/])?(?P<Resource>.*)$
-~~~
+```
+
 A pattern to parse Amazon Web Services ARNs into their varying components:
 
-Partition
-Service
-Region
-AccountID
-ResourceType (optional - empty string is missing)
-Resource
-<----
+Partition Service Region AccountID ResourceType (optional - empty string is
+missing) Resource <----
 
 ##### RegEx Simple Formula
 
-` ^us-[a-z]*-[0-9]{1} `
+`^us-[a-z]*-[0-9]{1}`
 
 [Use this regexer to get an idea of how it works](https://regexr.com/4prv4)
-
 
 ## Guidelines
 
 - Pool Operators
-   - Requirements
+  - Requirements
 - Node Operators
-   - Requirements
+  - Requirements
 
 ## Documentation Driven Development
 
@@ -117,6 +117,7 @@ Thanks goes to these wonderful people
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the
