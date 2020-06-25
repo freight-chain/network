@@ -1,0 +1,36 @@
+.group rect { opacity: 0.5; }
+
+.node,
+.group rect { cursor: move; }
+.link text { cursor: default; }
+
+.node rect,
+.group rect {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.node text { font-size: 10px; }
+
+.link line {
+  stroke: #7a4e4e;
+  stroke-width: 3px;
+  stroke-opacity: 1;
+}
+
+.link text { font-size: 7px; }
+.link text:hover tspan,
+.link text.hover tspan {
+  fill: #00B0E8;
+  font-weight: bold;
+  visibility: visible !important;
+}
+.link text.hover tspan {
+  font-size: 10px;
+}
+.link line:hover {
+  stroke: #00B0E8;
+}
+
+.loopback,
+.interface { fill: #333; }
