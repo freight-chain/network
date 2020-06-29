@@ -1,6 +1,8 @@
 # Freight Trust & Clearing Network
 
-## Network & Community Forum
+[![Build Status](https://travis-ci.com/freight-chain/network.svg?branch=master)](https://travis-ci.com/freight-chain/network)
+
+## Contributors
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
