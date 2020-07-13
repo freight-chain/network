@@ -14,25 +14,19 @@
 
 <img src="ROOT/0.png"
      alt="Freight Trust Network Interface"
-     style="float: left; margin-right: 10px;" />
-<br />
+     style="float: left; margin-right: 10px;" /> <br />
 
 <img src="ROOT/1.png"
      alt="Freight Trust Network Interface"
-     style="float: left; margin-right: 10px;" />
-<br />
+     style="float: left; margin-right: 10px;" /> <br />
 
 <img src="ROOT/2.png"
      alt="Freight Trust Network Interface"
-     style="float: left; margin-right: 10px;" />
-<br />
+     style="float: left; margin-right: 10px;" /> <br />
 
 <img src="ROOT/3.png"
      alt="Freight Trust Network Interface"
-     style="float: left; margin-right: 10px;" />
-<br />
-
-
+     style="float: left; margin-right: 10px;" /> <br />
 
 ## Resources
 
