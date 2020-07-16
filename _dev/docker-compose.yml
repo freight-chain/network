@@ -1,0 +1,48 @@
+version: "3.7"
+
+services:
+  client:
+    build: ./client
+    depends_on:
+      - server
+    links:
+      - server
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/home/node/app
+      - /home/node/app/node_modules/
+    environment:
+      - REACT_APP_WS_URL=ws://server:8080/
+
+  server:
+    build: ./server
+    depends_on:
+      - db
+    links:
+      - db
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./server:/home/node/app
+      - /home/node/app/node_modules/
+    environment:
+      - PORT=8080
+      - HOST=0.0.0.0
+      - DATABASE_USER=postgres
+      - DATABASE_PASSWORD=postgres
+      - DATABASE_HOST=db
+      - DATABASE_DATABASE=postgres
+      - DATABASE_PORT=5432
+
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - "5431:5432"
+    volumes:
+      - ./docker/volumes/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
