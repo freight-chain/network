@@ -10,35 +10,14 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-## Overview
 
-<img src="ROOT/0.png"
-     alt="Freight Trust Network Interface"
-     style="float: left; margin-right: 10px;" />
-<br />
+## Protocol 
 
-<img src="ROOT/1.png"
-     alt="Freight Trust Network Interface"
-     style="float: left; margin-right: 10px;" />
-<br />
+[see protocol](https://github.com/freight-trust/protocol)
 
-<img src="ROOT/2.png"
-     alt="Freight Trust Network Interface"
-     style="float: left; margin-right: 10px;" />
-<br />
+## Releases 
 
-<img src="ROOT/3.png"
-     alt="Freight Trust Network Interface"
-     style="float: left; margin-right: 10px;" />
-<br />
-
-
-
-## Resources
-
-### Identity & Node Management
-
-Here is our guidelines using AWS best-practices
+[see releases](https://github.com/freight-trust/releases])
 
 ##### ARN Schema
 
