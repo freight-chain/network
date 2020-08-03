@@ -35,36 +35,21 @@
         },
         {
             "Effect": "Allow",
-            "Action": [
-                "ec2:CreateTags",
-                "ec2:DeleteTags"
-            ],
-            "Resource": [
-                "arn:aws:ec2:*:*:vpc/*",
-                "arn:aws:ec2:*:*:subnet/*"
-            ],
+            "Action": ["ec2:CreateTags", "ec2:DeleteTags"],
+            "Resource": ["arn:aws:ec2:*:*:vpc/*", "arn:aws:ec2:*:*:subnet/*"],
             "Condition": {
                 "ForAnyValue:StringLike": {
-                    "aws:TagKeys": [
-                        "kubernetes.io/cluster/*"
-                    ]
+                    "aws:TagKeys": ["kubernetes.io/cluster/*"]
                 }
             }
         },
         {
             "Effect": "Allow",
-            "Action": [
-                "ec2:CreateTags",
-                "ec2:DeleteTags"
-            ],
-            "Resource": [
-                "arn:aws:ec2:*:*:security-group/*"
-            ],
+            "Action": ["ec2:CreateTags", "ec2:DeleteTags"],
+            "Resource": ["arn:aws:ec2:*:*:security-group/*"],
             "Condition": {
                 "ForAnyValue:StringLike": {
-                    "aws:TagKeys": [
-                        "kubernetes.io/cluster/*"
-                    ],
+                    "aws:TagKeys": ["kubernetes.io/cluster/*"],
                     "aws:RequestTag/Name": "eks-cluster-sg*"
                 }
             }
@@ -81,10 +66,7 @@
         },
         {
             "Effect": "Allow",
-            "Action": [
-                "logs:CreateLogStream",
-                "logs:DescribeLogStreams"
-            ],
+            "Action": ["logs:CreateLogStream", "logs:DescribeLogStreams"],
             "Resource": "arn:aws:logs:*:*:log-group:/aws/eks/*:*"
         },
         {

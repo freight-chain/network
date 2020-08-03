@@ -1,8 +1,7 @@
-# What is an "EDI" Transaction? 
+# What is an "EDI" Transaction?
+
 www.freighttrust.com
 www.t.me/freighttrust
-
-
 
 ## Formats of EDI
 
@@ -10,9 +9,7 @@ EDI works based on standards which determine how each message should be formatte
 
 Four EDI standards exist: UN/EDIFACT, which is the only internationally-recognized standard, used mostly outside of North America; ANSI ASC X12, used within North America, TRADACOM, used by British retail companies, and ODETTE, which is used by European automakers.
 
-
 **Here is a small EDI sample, an X12 interchange containing a single 824 Application Advice transaction.**
-
 
 ```
 ISA*00*          *00*          *08*9254110060     *ZZ*123456789      *041216*0805*U*00501*000095071*0*P*>~
@@ -27,7 +24,9 @@ SE*7*021390001~
 GE*1*95071~
 IEA*1*000095071~
 ```
+
 ### Here is a that EDI transaction in JSON format
+
 ```
 {
   "interchanges": [
@@ -121,8 +120,6 @@ IEA*1*000095071~
 }
 ```
 
-
-
 The implementation of EDI is important for companies as it can significantly reduce the cost of sending documents.
 
 **EDI Costs Versus Benefits**
@@ -130,12 +127,10 @@ A paper purchase order requires resources to print the document, fax it, or post
 
 Not all companies use EDI. There is a cost to implement and maintain the technology required to perform EDI. Each trading partner that a company wants to use EDI with may require resources to set up and this can be cost-prohibitive for smaller companies or companies without technical resources.
 
-
 EDI How It Works
-There are a number of ways EDI messages are transmitted between trading partners. The most common method was to *use a value-added network or VAN.* This allowed companies to send a transmission which was then reviewed by the VAN and then sent to the correct recipient.
+There are a number of ways EDI messages are transmitted between trading partners. The most common method was to _use a value-added network or VAN._ This allowed companies to send a transmission which was then reviewed by the VAN and then sent to the correct recipient.
 
 **Think of Freight Trust Network as a Value Added Network**
-
 
 More recently a new method for EDI transmission is being used. This is called AS2, which stands for Applicability Statement 2, and was championed by Wal-Mart, who requires all of their vendors to use this method. Using AS2, the EDI documents are transmitted across the internet and the security of the document is achieved by encryption and the use of digital certificates.
 
@@ -149,7 +144,8 @@ For example a company who is implementing EDI between themselves and a third par
 
 # Supported EDI Transactions
 
-## Fully Supported 
+## Fully Supported
+
 204 Motor Carrier Shipment Information - Version 4010
 
 210 Freight Details and Invoice - Version 4010
@@ -160,9 +156,8 @@ For example a company who is implementing EDI between themselves and a third par
 
 997 Functional Acknowledgement
 
-
-
 # Partial List of additional EDI Transactions
+
 Frequently Used EDI Transactions In Supply Chain
 753 Request for Routing Instructions
 
@@ -253,6 +248,5 @@ Frequently Used EDI Transactions In Supply Chain
 945 Warehouse Shipping Advice
 
 947 Warehouse Inventory Adjustment Advice
-
 
 www.freighttrust.com

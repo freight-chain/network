@@ -53,6 +53,6 @@ cp config.json.example config.json
 
 You can also configure things by using environment variables:
 
-- `ACCOUNT` - Ethereum account to send fund from
-- `KEY` - Private key for that account
-- `RPC` - RPC endpoint to use
+-   `ACCOUNT` - Ethereum account to send fund from
+-   `KEY` - Private key for that account
+-   `RPC` - RPC endpoint to use

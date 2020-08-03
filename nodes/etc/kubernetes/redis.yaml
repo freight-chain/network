@@ -1,10 +1,10 @@
 ---
 usePassword: false
 configmap: |-
-  notify-keyspace-events Kg
-  maxmemory 100mb
-  maxmemory-policy allkeys-lru
+    notify-keyspace-events Kg
+    maxmemory 100mb
+    maxmemory-policy allkeys-lru
 cluster:
-  enabled: false
+    enabled: false
 metrics:
-  enabled: false
+    enabled: false

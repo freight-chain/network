@@ -21,14 +21,8 @@
         },
         {
             "Effect": "Allow",
-            "Action": [
-                "ec2:CreateTags",
-                "ec2:DeleteTags"
-            ],
-            "Resource": [
-                "arn:aws:ec2:*:*:vpc/*",
-                "arn:aws:ec2:*:*:subnet/*"
-            ]
+            "Action": ["ec2:CreateTags", "ec2:DeleteTags"],
+            "Resource": ["arn:aws:ec2:*:*:vpc/*", "arn:aws:ec2:*:*:subnet/*"]
         },
         {
             "Effect": "Allow",
@@ -42,10 +36,7 @@
         },
         {
             "Effect": "Allow",
-            "Action": [
-                "logs:CreateLogStream",
-                "logs:DescribeLogStreams"
-            ],
+            "Action": ["logs:CreateLogStream", "logs:DescribeLogStreams"],
             "Resource": "arn:aws:logs:*:*:log-group:/aws/eks/*:*"
         },
         {
