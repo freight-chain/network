@@ -1,0 +1,56 @@
+%title {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+%description {
+  color: #8197a2;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: normal;
+}
+.request-tokens {
+  @extend %item;
+  padding: 30px;
+  display: inline-block;
+
+  h1 {
+    @extend %title;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    @extend %description;
+    margin-bottom: 20px;
+  }
+
+  &-button {
+    @extend %btn;
+    display: inline-block;
+    background-color: #08b3f2;
+
+    &:hover {
+      background-color: #079dd4;
+    }
+  }
+}
+
+@media screen and (max-height: 730px) {
+  .faucet-logo {
+    display:none;
+  }
+}
+
+body, .content {
+  background-color:#bdae9b;
+}
+.request-tokens-button {
+  background-color:#21221d;
+  color: #bdae9b;
+}
+
+.request-tokens-button:hover {
+  background-color:#444739;
+  color: white;
+}
