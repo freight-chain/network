@@ -78,27 +78,27 @@ Then in the [server](server/server.js), you can see the `LISTEN` command and the
 `.on('notification', ...)` event:
 
 ```javascript
-client.on("notification", function (msg) {
-  const payload = msg.payload;
-  console.log(payload);
+client.on('notification', function (msg) {
+    const payload = msg.payload
+    console.log(payload)
 
-  // Send payload into a queue etc...
-  emitter.emit("event", payload);
-});
+    // Send payload into a queue etc...
+    emitter.emit('event', payload)
+})
 
 // Listen for NOTIFY calls
-(async () => {
-  var res = await client.query("LISTEN db_notifications");
-})();
+;(async () => {
+    var res = await client.query('LISTEN db_notifications')
+})()
 ```
 
 There's then a simple event listener that sends the payload down to the
 connected client, if the id matches some id requested by the client:
 
 ```javascript
-emitter.on("event", function listener(payload) {
-  if (payload["input_id"] === id) {
-    ws.send(payload);
-  }
-});
+emitter.on('event', function listener(payload) {
+    if (payload['input_id'] === id) {
+        ws.send(payload)
+    }
+})
 ```

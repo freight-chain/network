@@ -1,5 +1,5 @@
 ---
 fullnameOverride: redis-nonce
 master:
-  persistence:
-    enabled: false
+    persistence:
+        enabled: false

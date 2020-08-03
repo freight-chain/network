@@ -1,31 +1,31 @@
 {
-  "nodes": [
-    { "name": "mesh", "icon": "./images/nat.png" },
-    { "name": "metapool", "icon": "./images/openflow.png" },
-    { "name": "pool-a", "icon": "./images/router.png" },
-    { "name": "pool-b", "icon": "./images/router.png" },
-    { "name": "redis-sync", "icon": "./images/router.png" },
-    { "name": "redis-query", "icon": "./images/router.png" },
-    { "name": "redis-tx", "icon": "./images/router.png" }
-  ],
+    "nodes": [
+        { "name": "mesh", "icon": "./images/nat.png" },
+        { "name": "metapool", "icon": "./images/openflow.png" },
+        { "name": "pool-a", "icon": "./images/router.png" },
+        { "name": "pool-b", "icon": "./images/router.png" },
+        { "name": "redis-sync", "icon": "./images/router.png" },
+        { "name": "redis-query", "icon": "./images/router.png" },
+        { "name": "redis-tx", "icon": "./images/router.png" }
+    ],
 
-  "links": [
-    { "source": "metapool", "target": "pool-a" },
-    { "source": "metapool", "target": "pool-b" },
-    { "source": "pool-a", "target": "pool-b" },
-    { "source": "pool-b", "target": "pool-a" },
-    { "source": "pool-a", "target": "redis-sync" },
-    { "source": "pool-a", "target": "redis-tx" },
-    { "source": "pool-a", "target": "redis-query" },
-    { "source": "pool-b", "target": "redis-sync" },
-    { "source": "pool-b", "target": "redis-tx" },
-    { "source": "pool-b", "target": "redis-query" },
-     {
-      "source": "metapool", "target": "pool-a",
-      "meta": {
-        "interface": { "source": "0-0-0-2", "target": "1-1" }
-      }
-    }
-   
-  ]
+    "links": [
+        { "source": "metapool", "target": "pool-a" },
+        { "source": "metapool", "target": "pool-b" },
+        { "source": "pool-a", "target": "pool-b" },
+        { "source": "pool-b", "target": "pool-a" },
+        { "source": "pool-a", "target": "redis-sync" },
+        { "source": "pool-a", "target": "redis-tx" },
+        { "source": "pool-a", "target": "redis-query" },
+        { "source": "pool-b", "target": "redis-sync" },
+        { "source": "pool-b", "target": "redis-tx" },
+        { "source": "pool-b", "target": "redis-query" },
+        {
+            "source": "metapool",
+            "target": "pool-a",
+            "meta": {
+                "interface": { "source": "0-0-0-2", "target": "1-1" }
+            }
+        }
+    ]
 }

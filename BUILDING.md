@@ -19,11 +19,11 @@ MUST write build artifacts in.
 
 A project MUST provide:
 
-- a folder name convention for build artifacts
-- a folder structure for the above-mentioned build artifacts folder
-- a list of targets
-- a file called `bin/build.{target}.{ext}` to target each of the build targets
-- a build pipeline given the above pretext
+-   a folder name convention for build artifacts
+-   a folder structure for the above-mentioned build artifacts folder
+-   a list of targets
+-   a file called `bin/build.{target}.{ext}` to target each of the build targets
+-   a build pipeline given the above pretext
 
 The purpose of having a uniform way of producing a build is that we may ALL
 produce builds for any of the projects, making the onramp for new developers

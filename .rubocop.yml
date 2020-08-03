@@ -1,5 +1,5 @@
 Style/FrozenStringLiteralComment:
-  Enabled: false
+    Enabled: false
 
 Style/StringLiterals:
-  EnforcedStyle: double_quotes
+    EnforcedStyle: double_quotes

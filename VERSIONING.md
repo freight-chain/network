@@ -5,11 +5,13 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 This document is licensed under [The Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
 
 ## Introduction
+
 This document is to describe how a project is to version its releases
 
 It also describes standardized tooling around manipulating the version
 
 ## Semver
+
 A project MUST use Semantic Versioning [semver](https://semver.org). Build metadata MAY NOT be used in a project. Build metadata SHOULD be ignored.
 
 A Basic summary of Semantic Versioning taken from: [semver.org](https://semver.org)
