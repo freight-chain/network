@@ -1,0 +1,3 @@
+*.dhall linguist-language=Dhall
+*.sol linguist-language=Solidity
+*.js -linguist-vendored

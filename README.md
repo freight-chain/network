@@ -10,13 +10,14 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-## Overview
 
-## Resources
+## Protocol 
 
-### Identity & Node Management
+[see protocol](https://github.com/freight-trust/protocol)
 
-Here is our guidelines using AWS best-practices
+## Releases 
+
+[see releases](https://github.com/freight-trust/releases])
 
 ##### ARN Schema
 
