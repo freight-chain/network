@@ -1,12 +1,21 @@
 # Freight Trust & Clearing Network
 
 [![Build Status](https://travis-ci.com/freight-chain/network.svg?branch=master)](https://travis-ci.com/freight-chain/network)
+[![Download](https://api.bintray.com/packages/hyperledger-org/besu-repo/besu/images/download.svg)](https://bintray.com/hyperledger-org/besu-repo/besu/_latestVersion)
 
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+## Governance
+
+[see governance](https://github.com/freight-chain/rfc
+
+## Community 
+
+> New Community Structure and Startingpoint TBA
 
 ## Protocol
 
@@ -16,31 +25,6 @@
 
 [see releases](https://github.com/freight-trust/releases])
 
-##### ARN Schema
-
-arn:partition:service:region:account-id:resource-id
-arn:partition:service:region:account-id:resource-type/resource-id
-arn:partition:service:region:account-id:resource-type:resource-id
-
-#### RegEx Formula
-
-(python) --->
-
-```
-^arn:(?P<Partition>[^:\n]*):(?P<Service>[^:\n]*):(?P<Region>[^:\n]*):(?P<AccountID>[^:\n]*):(?P<Ignore>(?P<ResourceType>[^:\/\n]*)[:\/])?(?P<Resource>.*)$
-```
-
-A pattern to parse Amazon Web Services ARNs into their varying components:
-
-Partition Service Region AccountID ResourceType (optional - empty string is
-missing) Resource <----
-
-##### RegEx Simple Formula
-
-`^us-[a-z]*-[0-9]{1}`
-
-[Use this regexer to get an idea of how it works](https://regexr.com/4prv4)
-
 ## Guidelines
 
 -   Pool Operators
@@ -48,19 +32,6 @@ missing) Resource <----
 -   Node Operators
     -   Requirements
 
-## Documentation Driven Development
-
-There are many ways to drive open source development. Documenting the problem in
-the README gives a middle ground between technical and non-technical
-specifications. This allows organizing solutions to this challenge around
-community and documentation.
-
-> [...] a beautifully crafted library with no documentation is also damn near
-> worthless. If your software solves the wrong problem or nobody can figure out
-> how to use it, there’s something very bad going on.
-
--   [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
-    by Tom Preson-Werner
 
 ### Conventions and Specifications
 
