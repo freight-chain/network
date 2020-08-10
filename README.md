@@ -9,9 +9,25 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+<<<<<<< HEAD
 ## Governance
 
 [see governance](https://github.com/freight-chain/rfc
+=======
+## Protocol
+
+[see protocol](https://github.com/freight-trust/protocol)
+
+## Releases
+
+[see releases](https://github.com/freight-trust/releases])
+
+##### ARN Schema
+
+arn:partition:service:region:account-id:resource-id
+arn:partition:service:region:account-id:resource-type/resource-id
+arn:partition:service:region:account-id:resource-type:resource-id
+>>>>>>> 4a0be64... refactor: lint & snytax
 
 ## Community 
 
@@ -32,6 +48,22 @@
 -   Node Operators
     -   Requirements
 
+<<<<<<< HEAD
+=======
+## Documentation Driven Development
+
+There are many ways to drive open source development. Documenting the problem in
+the README gives a middle ground between technical and non-technical
+specifications. This allows organizing solutions to this challenge around
+community and documentation.
+
+> [...] a beautifully crafted library with no documentation is also damn near
+> worthless. If your software solves the wrong problem or nobody can figure out
+> how to use it, there’s something very bad going on.
+
+-   [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+    by Tom Preson-Werner
+>>>>>>> 4a0be64... refactor: lint & snytax
 
 ### Conventions and Specifications
 
