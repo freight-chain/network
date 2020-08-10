@@ -1,5 +1,4 @@
-# Configuration for weekly-digest -- SEE DOCS: ttps://github.com/abhijeetps/weekly-digest/blob/master/docs/configuration.md
-publishDay: sun
+publishDay: monday
 canPublishIssues: true
 canPublishPullRequests: true
 canPublishContributors: true
