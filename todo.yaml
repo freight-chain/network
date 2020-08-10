@@ -1,12 +1,12 @@
 - name: Track TODO Action
   uses: ribtoks/tdg-github-action@v0.4.3-beta
   with:
-    ROOT: .
-    MIN_WORDS: 3
-    # Minimum amount of characters to create an issue
-    MIN_CHARACTERS: 30
-    CLOSE_ON_SAME_BRANCH: 1
-    ADD_LIMIT: 1
-    LABEL: BOT-TODO
-    SHA: 
-    REF:
+      ROOT: .
+      MIN_WORDS: 3
+      # Minimum amount of characters to create an issue
+      MIN_CHARACTERS: 30
+      CLOSE_ON_SAME_BRANCH: 1
+      ADD_LIMIT: 1
+      LABEL: BOT-TODO
+      SHA:
+      REF:
