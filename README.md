@@ -6,14 +6,14 @@
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Governance
 
 [see governance](https://github.com/freight-chain/rfc)
-
 
 ## Protocol
 
@@ -29,8 +29,7 @@ arn:partition:service:region:account-id:resource-id
 arn:partition:service:region:account-id:resource-type/resource-id
 arn:partition:service:region:account-id:resource-type:resource-id
 
-
-## Community 
+## Community
 
 > New Community Structure and Startingpoint TBA
 
@@ -44,13 +43,13 @@ arn:partition:service:region:account-id:resource-type:resource-id
 
 ## Guidelines
 
--   Pool Operators
-    -   Requirements
--   Node Operators
-    -   Requirements
-
+- Pool Operators
+  - Requirements
+- Node Operators
+  - Requirements
 
 =======
+
 ## Documentation Driven Development
 
 There are many ways to drive open source development. Documenting the problem in
@@ -62,32 +61,31 @@ community and documentation.
 > worthless. If your software solves the wrong problem or nobody can figure out
 > how to use it, there’s something very bad going on.
 
--   [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
-    by Tom Preson-Werner
-
+- [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+  by Tom Preson-Werner
 
 ### Conventions and Specifications
 
 Using conventions, documentation and specifications make it easier to:
 
--   communicate the problem you are solving
--   ease onboarding
--   build and use composable tools
--   promote open source contribution and engagement
--   promote issue and feature discussion on Github itself
+- communicate the problem you are solving
+- ease onboarding
+- build and use composable tools
+- promote open source contribution and engagement
+- promote issue and feature discussion on Github itself
 
 #### Resources
 
--   [opensource.guide](https://opensource.guide/)
--   [Github community profiles for public repositories](https://help.github.com/articles/about-community-profiles-for-public-repositories/)
--   [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
--   [pengwynn/flint](https://github.com/pengwynn/flint)
--   [Working Backwards](https://www.allthingsdistributed.com/2006/11/working_backwards.html)
--   [Literate programming](https://en.wikipedia.org/wiki/Literate_programming)
--   [Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)
--   [Inversion and The Power of Avoiding Stupidity](https://fs.blog/2013/10/inversion/)
--   [choosealicense.com](http://choosealicense.com)
--   [The Documentation Compendium](https://github.com/kylelobo/The-Documentation-Compendium)
+- [opensource.guide](https://opensource.guide/)
+- [Github community profiles for public repositories](https://help.github.com/articles/about-community-profiles-for-public-repositories/)
+- [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+- [pengwynn/flint](https://github.com/pengwynn/flint)
+- [Working Backwards](https://www.allthingsdistributed.com/2006/11/working_backwards.html)
+- [Literate programming](https://en.wikipedia.org/wiki/Literate_programming)
+- [Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)
+- [Inversion and The Power of Avoiding Stupidity](https://fs.blog/2013/10/inversion/)
+- [choosealicense.com](http://choosealicense.com)
+- [The Documentation Compendium](https://github.com/kylelobo/The-Documentation-Compendium)
 
 ## Getting Started
 
@@ -121,6 +119,7 @@ Thanks goes to these wonderful people
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the
