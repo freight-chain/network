@@ -9,11 +9,12 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-<<<<<<< HEAD
+
 ## Governance
 
-[see governance](https://github.com/freight-chain/rfc
-=======
+[see governance](https://github.com/freight-chain/rfc)
+
+
 ## Protocol
 
 [see protocol](https://github.com/freight-trust/protocol)
@@ -27,7 +28,7 @@
 arn:partition:service:region:account-id:resource-id
 arn:partition:service:region:account-id:resource-type/resource-id
 arn:partition:service:region:account-id:resource-type:resource-id
->>>>>>> 4a0be64... refactor: lint & snytax
+
 
 ## Community 
 
@@ -48,7 +49,7 @@ arn:partition:service:region:account-id:resource-type:resource-id
 -   Node Operators
     -   Requirements
 
-<<<<<<< HEAD
+
 =======
 ## Documentation Driven Development
 
@@ -63,7 +64,7 @@ community and documentation.
 
 -   [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
     by Tom Preson-Werner
->>>>>>> 4a0be64... refactor: lint & snytax
+
 
 ### Conventions and Specifications
 
