@@ -2,21 +2,21 @@
 overrides: prettier
 name: prettier-json
 include:
-  - "**/*.json"
+    - '**/*.json'
 documentation:
-  - https://prettier.io/docs/en/options.html#parser
+    - https://prettier.io/docs/en/options.html#parser
 metadata:
-  languages:
-    - JSON
-  tests:
-    - extension: json
-      contents: |
-        {
-           "foo": "bar"
-           , "baz":
-         "bat" }
-      restyled: |
-        {
-          "foo": "bar",
-          "baz": "bat"
-        }
+    languages:
+        - JSON
+    tests:
+        - extension: json
+          contents: |
+              {
+                 "foo": "bar"
+                 , "baz":
+               "bat" }
+          restyled: |
+              {
+                "foo": "bar",
+                "baz": "bat"
+              }

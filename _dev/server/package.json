@@ -1,0 +1,17 @@
+{
+    "name": "live-pg-server",
+    "version": "1.0.0",
+    "description": "A simple example of building a live postgres app",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "pg": "^7.12.1",
+        "postgres-migrations": "^3.0.2",
+        "ws": "^7.2.0"
+    }
+}

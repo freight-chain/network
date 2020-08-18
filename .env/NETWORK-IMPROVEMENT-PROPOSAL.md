@@ -1,29 +1,34 @@
 A proposal to define a limited number of annual time windows in which network upgrad
 
 **Simple Summary**
-A proposal to define a limited number of annual time windows in which network upgrades (aka hard forks) should be performed within. Policies for scheduling network upgrades outside these windows are also described. This is a modified document from [EIP-1872](https://eips.ethereum.org/EIPS/eip-1872)  
-
+A proposal to define a limited number of annual time windows in which network upgrades (aka hard forks) should be performed within. Policies for scheduling network upgrades outside these windows are also described. This is a modified document from [EIP-1872](https://eips.ethereum.org/EIPS/eip-1872)
 
 ## Abstract
-Four different weeks, spaced roughly evenly throughout the year, are targeted for network upgrades to be launched. Regular network upgrades should announce their intention to launch in a particular window early in their process and choose a block number four to six weeks prior to that window. If a network upgrade is cancelled then it would be rescheduled for the next window. Not all windows will be used. Priority upgrades outside the roadmap may be scheduled in the third week of any month, but such use is discouraged. Critical upgrades are scheduled as needed.  
+
+Four different weeks, spaced roughly evenly throughout the year, are targeted for network upgrades to be launched. Regular network upgrades should announce their intention to launch in a particular window early in their process and choose a block number four to six weeks prior to that window. If a network upgrade is cancelled then it would be rescheduled for the next window. Not all windows will be used. Priority upgrades outside the roadmap may be scheduled in the third week of any month, but such use is discouraged. Critical upgrades are scheduled as needed.
 
 ## Motivation
+
 The aim of this NIP is to provide some level of regularity and predictability to the Freight Trust network upgrade/hard fork process. This will allow service providers such as exchanges and node operators a predictable framework to schedule activities around. This also provides a framework to regularize the delivery of network upgrades.
 
 ## Specification
+
 Scheduling is defined for three categories of network upgrades. First are Roadmap network upgrades that include deliberate protocol improvements. Next are Priority network updates, where there are technical reasons that necessitate a prompt protocol change but these reasons do not present a systemic risk to the protocol or the ecosystem. Finally, Critical network upgrades are to address issues that present a systemic risk to the protocol or the ecosystem.
 
-# Roadmap 
+# Roadmap
 
 ## Network Upgrades
+
 Roadmap network upgrades are network upgrades that are deliberate and measured to improve the protocol and ecosystem. Historical examples are Homestead, Byzantium, and Constantinople.
 
 ## Upgrade Scheduling
+
 Upgrades should be scheduled in one of four windows: the week with the third Wednesday in January, April, July, and October. When initiating a network upgrade or early in the planning process a particular window should be targeted.
 
 > Note to reviewers: The months and week chosen are to provide an initial recommendation and are easily modifiable prior to final call. They thread the needle between many third quarter and fourth quarter holidays.
 
 ## Operational Implementation
+
 Implementors are expected to have software for a Roadmap network upgrade ready two to four weeks prior to the upgrade. Hence a block number for the network upgrade should be chosen four to six weeks prior to the network upgrade window. Scheduling details such as whether this choice is made prior to or after testnet deployment are out of scope of this NIP.
 
 Depending on the release cadence of Roadmap network upgrades some windows will not be used. For example if a six month release cadence is chosen a roadmap upgrade would not occur in adjacent upgrade windows. Hence for a six month cadence if a roadmap upgrade occurred in April then the July window would not be used for network upgrades.
@@ -32,20 +37,20 @@ If a planned roadmap upgrade needs to be rescheduled then strong consideration s
 
 To be compatible with the scheduled release windows the cadence of the Roadmap Network Upgrades should be a multiple of three months. Whether it is three, six, nine, or more month cadence is out of scope of this NIP.
 
-# Priority Upgrades  
-Emergency Procedures  
+# Priority Upgrades
+
+Emergency Procedures
 
 ## Priority Network Upgrades
-Priority network upgrades are reserved for upgrades that require more urgency than a roadmap network upgrade yet do not present a systemic risk to the network or the ecosystem. To date there have been no examples of a priority upgrade. Possible examples may include roadmap upgrades that need to occur in multiple upgrades or for security risks that have a existing mitigation in place that would be better served by a network upgrade.  
 
+Priority network upgrades are reserved for upgrades that require more urgency than a roadmap network upgrade yet do not present a systemic risk to the network or the ecosystem. To date there have been no examples of a priority upgrade. Possible examples may include roadmap upgrades that need to occur in multiple upgrades or for security risks that have a existing mitigation in place that would be better served by a network upgrade.
 
-Priority network upgrades are best launched in unused roadmap launch windows, namely the third week of January, April, July, and October. If necessary they may be launched in the third week of any month, but strong consideration and preference should be given to unused roadmap launch windows.  
+Priority network upgrades are best launched in unused roadmap launch windows, namely the third week of January, April, July, and October. If necessary they may be launched in the third week of any month, but strong consideration and preference should be given to unused roadmap launch windows.
 
+Priority network upgrades should be announced and a block chosen far enough in advance so major clients implementors can release software with the needed block number in a timely fashion. These releases should occur at least a week before the launch window. Hence priority launch windows should be chosen two to four weeks in advance.
 
-Priority network upgrades should be announced and a block chosen far enough in advance so major clients implementors can release software with the needed block number in a timely fashion. These releases should occur at least a week before the launch window. Hence priority launch windows should be chosen two to four weeks in advance.  
-
-  
 ## Critical Upgrades
+
 Critical Network Upgrades
 Critical network upgrades are network upgrades that are designed to address systemic risks to the protocol or to the ecosystem. Historical examples include Dao Fork, Tangerine Whistle, and Spurious Dragon.
 
@@ -54,38 +59,42 @@ This NIP provides neither guidance nor restrictions to the development and deplo
 It is recommended that such upgrades perform the minimum amount of changes needed to address the issues that caused the need for the Critical network upgrade and that other changes be integrated into subsequent Priority and Roadmap network upgrades.
 
 ### Network Upgrade Block Number Choice
+
 When choosing an activation block the number can be used to communicate the role of a particular network in the Freight Trust Network and in general the Ethereum Ecosystem (mainnet=foundation). Networks that serve as a value store or are otherwise production grade have different stability concerns than networks that serve as technology demonstration or are explicitly designated for testing.
 
-To date all Mainnet activation blocks have ended in three or more zeros, including Critical Network Upgrades for the Ethereum Foundation. 
+To date all Mainnet activation blocks have ended in three or more zeros, including Critical Network Upgrades for the Ethereum Foundation.
 
 To continue this pattern network upgrade activation block numbers for mainnet deployments and production grade networks should chose a number whose base 10 representation ends with three or more zeros.
 
-## Network Upgrade Nomenclature 
+## Network Upgrade Nomenclature
+
 For testnet and testing or development grades network operators are encouraged to choose a block activation number that is a palindrome in base 10.
 
 Block numbers for Roadmap and Priority network upgrades should be chosen so that it is forecast to occur relatively close to Wednesday at 12:00 UTC+0 during the launch window. This should result in an actual block production occurring sometime between Monday and Friday of the chosen week.
 
 ### Activation Numbers
-Activation Numbers for Freight Trust Network  
 
-| Network | Procedure | 
-| -------- | -------- |
-| mainnet     | three or more zeros (3+ 0's)    |
-| testnets     | palindrome in base 10.    | 
+Activation Numbers for Freight Trust Network
 
+| Network  | Procedure                    |
+| -------- | ---------------------------- |
+| mainnet  | three or more zeros (3+ 0's) |
+| testnets | palindrome in base 10.       |
 
 ## Rationale
+
 The rationale for defining launch windows is to give business running Freight Trust infrastructure a predictable schedule for when upgrades may or may not occur. Knowing when a upgrade is not going to occur gives the businesses a clear time frame within which to perform internal upgrades free from external changes. It also provides a timetable for developers and IT professionals to schedule time off against.
 
 ### Backwards Compatibility (Ethereum Foundation Network)
-Except for the specific launch windows the previous network upgrades would have complied with these policies. Homestead, Byzantium, and Constantinople would have been Roadmap Network Upgrades. There were no Priority Network Upgrades. Dao Fork was a Critical Network Upgrade in response to TheDao. Tangerine Whistle and Spurious Dragon were critical upgrades in response to the Shanghai Spam Attacks. Constantinople Fix (as it is termed in the reference tests) was in response to the [EIP-1283]([https://eips.ethereum.org/](https://eips.ethereum.org/)
-) security issues.
+
+Except for the specific launch windows the previous network upgrades would have complied with these policies. Homestead, Byzantium, and Constantinople would have been Roadmap Network Upgrades. There were no Priority Network Upgrades. Dao Fork was a Critical Network Upgrade in response to TheDao. Tangerine Whistle and Spurious Dragon were critical upgrades in response to the Shanghai Spam Attacks. Constantinople Fix (as it is termed in the reference tests) was in response to the [EIP-1283](<[https://eips.ethereum.org/](https://eips.ethereum.org/)>) security issues.
 
 If this policy were in place prior to Constantinople then the initial 2018 launch would likely have been bumped to the next window after the Ropsten testnet consensus failures. The NIP-1283 issues likely would have resulted in an out of window upgrade because of the impact of the difficulty bomb.
 
 ### Implementation
-The windows in this NIP are expected to start after the Istanbul Network upgrade, which is the next planned Roadmap upgrade (aka hard forks) should be performed within. Policies for scheduling network upgrades outside these windows are also described.  
+
+The windows in this NIP are expected to start after the Istanbul Network upgrade, which is the next planned Roadmap upgrade (aka hard forks) should be performed within. Policies for scheduling network upgrades outside these windows are also described.
 
 ---
-[CC0]([https://eips.ethereum.org/](https://eips.ethereum.org/)
-) - Freight Trust and Clearing Corporation 
+
+[CC0](<[https://eips.ethereum.org/](https://eips.ethereum.org/)>) - Freight Trust and Clearing Corporation

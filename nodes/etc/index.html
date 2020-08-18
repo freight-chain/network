@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost:8000/example/ -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <link href="./index_files/style.css" rel="stylesheet" />
+        <script src="./index_files/d3.js"></script>
+        <script src="./index_files/cola.min.js"></script>
+        <script src="./index_files/inet-henge.js"></script>
+    </head>
+
+    <body data-gr-c-s-loaded="true">
+        <div id="diagram">
+            <svg width="960" height="600">
+                <g>
+                    <g
+                        transform="translate(-104.40139786726286,-107.20157521138293) scale(1.1875547673594664)"
+                    >
+                        <rect
+                            width="9600"
+                            height="6000"
+                            transform="translate(-4800, -3000)"
+                            style="opacity: 0;"
+                        ></rect>
+                        <g id="groups">
+                            <g
+                                class="group pool"
+                                transform="translate(396.51871033971184, 281.25776170592576)"
+                            >
+                                <rect
+                                    rx="8"
+                                    ry="8"
+                                    width="194.15501995810388"
+                                    height="44.999999987921456"
+                                    style="fill: rgb(31, 119, 180);"
+                                ></rect>
+                                <text>pool</text>
+                            </g>
+                            <g
+                                class="group redis"
+                                transform="translate(328.3284230910913, 376.25777570167446)"
+                            >
+                                <rect
+                                    rx="8"
+                                    ry="8"
+                                    width="308.80651547332354"
+                                    height="107.51967530638342"
+                                    style="fill: rgb(174, 199, 232);"
+                                ></rect>
+                                <text>redis</text>
+                            </g>
+                        </g>
+                        <g id="links">
+                            <g class="link metapool pool-a metapool-pool-a">
+                                <line
+                                    x1="492.5149730550468"
+                                    y1="191.57674206018268"
+                                    x2="427.51871033971184"
+                                    y2="302.25776170592576"
+                                    stroke="#7a4e4e"
+                                    stroke-width="3"
+                                    id="link0"
+                                    transform="translate(-6.467319390807238, -3.7978651762916353)"
+                                ></line>
+                                <path
+                                    d="M 492.5149730550468 191.57674206018268 L 427.51871033971184 302.25776170592576"
+                                    id="path0"
+                                    transform="translate(-6.467319390807238, -3.7978651762916353)"
+                                ></path>
+                            </g>
+                            <g class="link metapool pool-b metapool-pool-b">
+                                <line
+                                    x1="492.5149730550468"
+                                    y1="191.57674206018268"
+                                    x2="559.6737302978157"
+                                    y2="305.2577616938472"
+                                    stroke="#7a4e4e"
+                                    stroke-width="3"
+                                    id="link1"
+                                    transform="translate(0, 0)"
+                                ></line>
+                                <path
+                                    d="M 492.5149730550468 191.57674206018268 L 559.6737302978157 305.2577616938472"
+                                    id="path1"
+                                    transform="translate(0, 0)"
+                                ></path>
+                            </g>
+                            <g class="link pool-a pool-b pool-a-pool-b">
+                                <line
+                                    x1="427.51871033971184"
+                                    y1="302.25776170592576"
+                                    x2="559.6737302978157"
+                                    y2="305.2577616938472"
+                                    stroke="#7a4e4e"
+                                    stroke-width="3"
+                                    id="link2"
+                                    transform="translate(-0.171301732175128, -7.49804345923347)"
+                                ></line>
+                                <path
+                                    d="M 427.51871033971184 302.25776170592576 L 559.6737302978157 305.2577616938472"
+                                    id="path2"
+                                    transform="translate(-0.171301732175128, -7.49804345923347)"
+                                ></path>
+                            </g>
+                            <g class="link pool-b pool-a pool-b-pool-a">
+                                <line
+                                    x1="559.6737302978157"
+                                    y1="305.2577616938472"
+                                    x2="427.51871033971184"
+                                    y2="302.25776170592576"
+                                    stroke="#7a4e4e"
+                                    stroke-width="3"
+                                    id="link3"
+                                    transform="translate(0.171301732175128, 7.49804345923347)"
+                                ></line>
+                                <path
+                                    d="M 559.6737302978157 305.2577616938472 L 427.51871033971184 302.25776170592576"
+                                    id="path3"
+                                    transform="translate(0.171301732175128, 7.49804345923347)"
+                                ></path>
+                            </g>
+                            <g class="link pool-a redis-sync pool-a-redis-sync">
+                                <line
+                                    x1="427.51871033971184"
+                                    y1="302.25776170592576"
+                                    x2="359.3284230910913"
+                                    y2="397.25777570167446"
+                                    stroke="#7a4e4e"
+                                    stroke-width="3"
+                                    id="link4"
+                                    transform="translate(0, 0)"
+                                ></line>
+                                <path
+                                    d="M 427.51871033971184 302.25776170592576 L 359.3284230910913 397.25777570167446"
+                                    id="path4"
+                                    transform="translate(0, 0)"
+                                ></path>
+                            </g>
+                            <g class="link pool-a redis-tx pool-a-redis-tx">
+                                <line
+                                    x1="427.51871033971184"
+                                    y1="302.25776170592576"
+                                    x2="490.4924152647795"
+                                    y2="462.7774510080579"
+                                    stroke="#7a4e4e"
+                                    stroke-width="3"
+                                    id="link5"
+                                    transform="translate(0, 0)"
+                                ></line>
+                                <path
+                                    d="M 427.51871033971184 302.25776170592576 L 490.4924152647795 462.7774510080579"
+                                    id="path5"
+                                    transform="translate(0, 0)"
+                                ></path>
+                            </g>
+                            <g
+                                class="link pool-a redis-query pool-a-redis-query"
+                            >
+                                <line
+                                    x1="427.51871033971184"
+                                    y1="302.25776170592576"
+                                    x2="606.1349385644148"
+                                    y2="410.2577647104683"
+                                    stroke="#7a4e4e"
+                                    stroke-width="3"
+                                    id="link6"
+                                    transform="translate(0, 0)"
+                                ></line>
+                                <path
+                                    d="M 427.51871033971184 302.25776170592576 L 606.1349385644148 410.2577647104683"
+                                    id="path6"
+                                    transform="translate(0, 0)"
+                                ></path>
+                            </g>
+                            <g class="link pool-b redis-sync pool-b-redis-sync">
+                                <line
+                                    x1="559.6737302978157"
+                                    y1="305.2577616938472"
+                                    x2="359.3284230910913"
+                                    y2="397.25777570167446"
+                                    stroke="#7a4e4e"
+                                    stroke-width="3"
+                                    id="link7"
+                                    transform="translate(0, 0)"
+                                ></line>
+                                <path
+                                    d="M 559.6737302978157 305.2577616938472 L 359.3284230910913 397.25777570167446"
+                                    id="path7"
+                                    transform="translate(0, 0)"
+                                ></path>
+                            </g>
+                            <g class="link pool-b redis-tx pool-b-redis-tx">
+                                <line
+                                    x1="559.6737302978157"
+                                    y1="305.2577616938472"
+                                    x2="490.4924152647795"
+                                    y2="462.7774510080579"
+                                    stroke="#7a4e4e"
+                                    stroke-width="3"
+                                    id="link8"
+                                    transform="translate(0, 0)"
+                                ></line>
+                                <path
+                                    d="M 559.6737302978157 305.2577616938472 L 490.4924152647795 462.7774510080579"
+                                    id="path8"
+                                    transform="translate(0, 0)"
+                                ></path>
+                            </g>
+                            <g
+                                class="link pool-b redis-query pool-b-redis-query"
+                            >
+                                <line
+                                    x1="559.6737302978157"
+                                    y1="305.2577616938472"
+                                    x2="606.1349385644148"
+                                    y2="410.2577647104683"
+                                    stroke="#7a4e4e"
+                                    stroke-width="3"
+                                    id="link9"
+                                    transform="translate(0, 0)"
+                                ></line>
+                                <path
+                                    d="M 559.6737302978157 305.2577616938472 L 606.1349385644148 410.2577647104683"
+                                    id="path9"
+                                    transform="translate(0, 0)"
+                                ></path>
+                            </g>
+                            <g class="link metapool pool-a metapool-pool-a">
+                                <line
+                                    x1="492.5149730550468"
+                                    y1="191.57674206018268"
+                                    x2="427.51871033971184"
+                                    y2="302.25776170592576"
+                                    stroke="#7a4e4e"
+                                    stroke-width="3"
+                                    id="link10"
+                                    transform="translate(6.467319390807238, 3.7978651762916353)"
+                                ></line>
+                                <path
+                                    d="M 492.5149730550468 191.57674206018268 L 427.51871033971184 302.25776170592576"
+                                    id="path10"
+                                    transform="translate(6.467319390807238, 3.7978651762916353)"
+                                ></path>
+                            </g>
+                        </g>
+                        <g id="nodes">
+                            <g
+                                id="mesh"
+                                name="mesh"
+                                transform="translate(535, 180.23740507965724)"
+                                class="node image mesh"
+                            >
+                                <image
+                                    href="./images/nat.png"
+                                    width="54"
+                                    height="34"
+                                ></image>
+                                <text text-anchor="middle" x="30" y="20">
+                                    <tspan x="30">mesh</tspan>
+                                </text>
+                            </g>
+                            <g
+                                id="metapool"
+                                name="metapool"
+                                transform="translate(465.5149730550468, 174.57674206018268)"
+                                class="node image metapool"
+                            >
+                                <image
+                                    href="./images/openflow.png"
+                                    width="54"
+                                    height="34"
+                                ></image>
+                                <text text-anchor="middle" x="30" y="20">
+                                    <tspan x="30">metapool</tspan>
+                                </text>
+                            </g>
+                            <g
+                                id="pool-a"
+                                name="pool-a"
+                                transform="translate(400.51871033971184, 285.25776170592576)"
+                                class="node image pool-a"
+                            >
+                                <image
+                                    href="./images/router.png"
+                                    width="54"
+                                    height="34"
+                                ></image>
+                                <text text-anchor="middle" x="30" y="20">
+                                    <tspan x="30">pool-a</tspan>
+                                </text>
+                            </g>
+                            <g
+                                id="pool-b"
+                                name="pool-b"
+                                transform="translate(532.6737302978157, 288.2577616938472)"
+                                class="node image pool-b"
+                            >
+                                <image
+                                    href="./images/router.png"
+                                    width="54"
+                                    height="34"
+                                ></image>
+                                <text text-anchor="middle" x="30" y="20">
+                                    <tspan x="30">pool-b</tspan>
+                                </text>
+                            </g>
+                            <g
+                                id="redis-sync"
+                                name="redis-sync"
+                                transform="translate(332.3284230910913, 380.25777570167446)"
+                                class="node image redis-sync"
+                            >
+                                <image
+                                    href="./images/router.png"
+                                    width="54"
+                                    height="34"
+                                ></image>
+                                <text text-anchor="middle" x="30" y="20">
+                                    <tspan x="30">redis-sync</tspan>
+                                </text>
+                            </g>
+                            <g
+                                id="redis-query"
+                                name="redis-query"
+                                transform="translate(579.1349385644148, 393.2577647104683)"
+                                class="node image redis-query"
+                            >
+                                <image
+                                    href="./images/router.png"
+                                    width="54"
+                                    height="34"
+                                ></image>
+                                <text text-anchor="middle" x="30" y="20">
+                                    <tspan x="30">redis-query</tspan>
+                                </text>
+                            </g>
+                            <g
+                                id="redis-tx"
+                                name="redis-tx"
+                                transform="translate(463.4924152647795, 445.7774510080579)"
+                                class="node image redis-tx"
+                            >
+                                <image
+                                    href="./images/router.png"
+                                    width="54"
+                                    height="34"
+                                ></image>
+                                <text text-anchor="middle" x="30" y="20">
+                                    <tspan x="30">redis-tx</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="link-labels">
+                            <g class="link metapool pool-a metapool-pool-a"></g>
+                            <g class="link metapool pool-b metapool-pool-b"></g>
+                            <g class="link pool-a pool-b pool-a-pool-b"></g>
+                            <g class="link pool-b pool-a pool-b-pool-a"></g>
+                            <g
+                                class="link pool-a redis-sync pool-a-redis-sync"
+                            ></g>
+                            <g class="link pool-a redis-tx pool-a-redis-tx"></g>
+                            <g
+                                class="link pool-a redis-query pool-a-redis-query"
+                            ></g>
+                            <g
+                                class="link pool-b redis-sync pool-b-redis-sync"
+                            ></g>
+                            <g class="link pool-b redis-tx pool-b-redis-tx"></g>
+                            <g
+                                class="link pool-b redis-query pool-b-redis-query"
+                            ></g>
+                            <g class="link metapool pool-a metapool-pool-a">
+                                <text
+                                    class="path10"
+                                    transform="rotate(180 476.3046875 217.4140625)"
+                                    style="visibility: hidden;"
+                                >
+                                    <textpath href="#path10">
+                                        <tspan
+                                            x="20"
+                                            dy="1.5em"
+                                            class="interface"
+                                        >
+                                            0-0-0-2
+                                        </tspan>
+                                    </textpath>
+                                </text>
+                                <text
+                                    class="path10"
+                                    transform="rotate(180 439.234375 280.5390625)"
+                                    style="visibility: hidden;"
+                                >
+                                    <textpath
+                                        href="#path10"
+                                        class="reverse"
+                                        text-anchor="end"
+                                        startOffset="100%"
+                                    >
+                                        <tspan
+                                            x="-20"
+                                            dy="1.5em"
+                                            class="interface"
+                                        >
+                                            1-1
+                                        </tspan>
+                                    </textpath>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <script>
+            const diagram = new Diagram('#diagram', 'index.json', {
+                pop: /^([^\s-]+)-/,
+                bundle: true,
+            })
+            diagram.init('loopback', 'interface')
+        </script>
+    </body>
+</html>

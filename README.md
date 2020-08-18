@@ -1,54 +1,52 @@
 # Freight Trust & Clearing Network
-## Network & Community Forum
+
+[![Build Status](https://travis-ci.com/freight-chain/network.svg?branch=master)](https://travis-ci.com/freight-chain/network)
+[![Download](https://api.bintray.com/packages/hyperledger-org/besu-repo/besu/images/download.svg)](https://bintray.com/hyperledger-org/besu-repo/besu/_latestVersion)
+
+## Contributors
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-## Overview
+## Governance
 
-## Resources
+[see governance](https://github.com/freight-chain/rfc)
 
-### Identity & Node Management 
+## Protocol
 
-Here is our guidelines using AWS best-practices
+[see protocol](https://github.com/freight-trust/protocol)
+
+## Releases
+
+[see releases](https://github.com/freight-trust/releases])
 
 ##### ARN Schema
+
 arn:partition:service:region:account-id:resource-id
 arn:partition:service:region:account-id:resource-type/resource-id
 arn:partition:service:region:account-id:resource-type:resource-id
 
-#### RegEx Formula
-(python)
---->
-~~~
-^arn:(?P<Partition>[^:\n]*):(?P<Service>[^:\n]*):(?P<Region>[^:\n]*):(?P<AccountID>[^:\n]*):(?P<Ignore>(?P<ResourceType>[^:\/\n]*)[:\/])?(?P<Resource>.*)$
-~~~
-A pattern to parse Amazon Web Services ARNs into their varying components:
+## Community
 
-Partition
-Service
-Region
-AccountID
-ResourceType (optional - empty string is missing)
-Resource
-<----
+> New Community Structure and Startingpoint TBA
 
-##### RegEx Simple Formula
+## Protocol
 
-` ^us-[a-z]*-[0-9]{1} `
+[see protocol](https://github.com/freight-trust/protocol)
 
-[Use this regexer to get an idea of how it works](https://regexr.com/4prv4)
+## Besu Configuration
 
+[see hyperledger besu cheatsheet](https://github.com/freight-trust/node)
 
 ## Guidelines
 
 - Pool Operators
-   - Requirements
+  - Requirements
 - Node Operators
-   - Requirements
+  - Requirements
 
 ## Documentation Driven Development
 
@@ -112,7 +110,8 @@ Thanks goes to these wonderful people
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/Wazzag99"><img src="https://avatars2.githubusercontent.com/u/33938431?v=4" width="100px;" alt=""/><br /><sub><b>Warren G</b></sub></a><br /><a href="#userTesting-Wazzag99" title="User Testing">📓</a></td>
+    <td align="center"><a href="https://github.com/Wazzag99"><img src="https://avatars2.githubusercontent.com/u/33938431?v=4" width="100px;" alt=""/><br /><sub><b>Warren G</b></sub></a><br /><a href="#userTesting-Wazzag99" title="User Testing">📓</a> <a href="https://github.com/freight-chain/network/pulls?q=is%3Apr+reviewed-by%3AWazzag99" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/xcantera"><img src="https://avatars0.githubusercontent.com/u/34890623?v=4" width="100px;" alt=""/><br /><sub><b>Arturo Cantera Carrasco</b></sub></a><br /><a href="#userTesting-xcantera" title="User Testing">📓</a></td>
   </tr>
 </table>
 
