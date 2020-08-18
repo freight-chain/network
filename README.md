@@ -37,9 +37,9 @@ arn:partition:service:region:account-id:resource-type:resource-id
 
 [see protocol](https://github.com/freight-trust/protocol)
 
-## Releases
+## Besu Configuration
 
-[see releases](https://github.com/freight-trust/releases])
+[see hyperledger besu cheatsheet](https://github.com/freight-trust/node)
 
 ## Guidelines
 
@@ -47,8 +47,6 @@ arn:partition:service:region:account-id:resource-type:resource-id
   - Requirements
 - Node Operators
   - Requirements
-
-=======
 
 ## Documentation Driven Development
 
