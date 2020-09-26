@@ -13,7 +13,8 @@
 
 ## Network Upgrand and New Infrastructure Rollout
 
-<!> PLEASE BE AWARE THAT MAJROTIY OF THESE CHANGES ARE TO BE ROLLED OUT AT ONCE <!>
+<!> PLEASE BE AWARE THAT MAJROTIY OF THESE CHANGES ARE TO BE ROLLED OUT AT ONCE
+<!>
 
 <!> INFORMATION WILL BE UPDATED AFTERWARDS <!>
 
@@ -49,10 +50,10 @@ arn:partition:service:region:account-id:resource-type:resource-id
 
 ## Guidelines
 
-- Pool Operators
-  - Requirements
-- Node Operators
-  - Requirements
+-   Pool Operators
+    -   Requirements
+-   Node Operators
+    -   Requirements
 
 ---
 
