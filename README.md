@@ -11,15 +11,11 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-
-## Network Upgrand and New Infrastructure Rollout 
-
+## Network Upgrand and New Infrastructure Rollout
 
 <!> PLEASE BE AWARE THAT MAJROTIY OF THESE CHANGES ARE TO BE ROLLED OUT AT ONCE <!>
 
 <!> INFORMATION WILL BE UPDATED AFTERWARDS <!>
-
-
 
 ## Governance
 
