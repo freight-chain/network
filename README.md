@@ -50,10 +50,10 @@ arn:partition:service:region:account-id:resource-type:resource-id
 
 ## Guidelines
 
--   Pool Operators
-    -   Requirements
--   Node Operators
-    -   Requirements
+- Pool Operators
+  - Requirements
+- Node Operators
+  - Requirements
 
 ---
 
